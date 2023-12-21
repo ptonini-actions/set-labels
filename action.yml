@@ -1,0 +1,16 @@
+name: set-labels
+description: ""
+inputs:
+  labels:
+    description: ''
+    required: true
+  overwrite:
+    description: ''
+    default: 'false'
+  github_token:
+    description: ''
+    required: false
+    default: ${{ github.token }}
+runs:
+  using: node16
+  main: dist/index.js
